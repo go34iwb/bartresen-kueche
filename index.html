@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bartresen Küche</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; background: #faf9f6; color: #1a1a1a; }
+  header.banner { background: #2d3a3a; color: #e8e8e8; padding: 3rem 1.5rem; text-align: center; }
+  header.banner h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; margin-bottom: 0.5rem; }
+  header.banner p { opacity: 0.85; max-width: 700px; margin: 0 auto; }
+  main { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+  section { margin-bottom: 3rem; }
+  h2 { font-size: 1.5rem; color: #2d3a3a; border-bottom: 2px solid #2d3a3a; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+  h3 { font-size: 1.1rem; color: #3a4a4a; margin-bottom: 0.5rem; }
+  .label { display: inline-block; background: #2d3a3a; color: #fff; font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 3px; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .drawings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+  .drawing { background: #fff; border: 1px solid #d0d8d8; border-radius: 8px; overflow: hidden; }
+  .drawing header { background: #f5f7f7; padding: 1rem; border-bottom: 1px solid #d0d8d8; }
+  .drawing header p { font-size: 0.85rem; color: #5a6a6a; margin-top: 0.25rem; }
+  .drawing svg { display: block; width: 100%; height: auto; background: #faf9f6; }
+  .drawing img { display: block; width: 100%; height: auto; }
+  .model-wrap { background: #fff; border: 1px solid #d0d8d8; border-radius: 8px; overflow: hidden; }
+  #model { width: 100%; height: 500px; background: #e8ecec; }
+  .model-controls { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 1rem; background: #f5f7f7; border-top: 1px solid #d0d8d8; align-items: center; }
+  .model-controls button { background: #2d3a3a; color: #fff; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-size: 0.9rem; }
+  .model-controls button[aria-pressed="true"] { background: #1a2525; }
+  .model-controls button:hover { background: #1a2525; }
+  .model-controls label { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: #3a4a4a; cursor: pointer; }
+  .model-note { font-size: 0.85rem; color: #6a7a7a; margin-top: 0.5rem; text-align: center; }
+  footer { text-align: center; padding: 2rem; color: #6a7a7a; font-size: 0.85rem; border-top: 1px solid #d0d8d8; margin-top: 2rem; }
+  .placeholder { display: flex; align-items: center; justify-content: center; height: 300px; color: #9aa8a8; font-style: italic; background: repeating-linear-gradient(45deg, #f0f2f2, #f0f2f2 10px, #e8ecec 10px, #e8ecec 20px); }
+</style>
+</head>
+<body>
+<header class="banner">
+  <h1>Bartresen Küche</h1>
+  <p>Planung & Dokumentation eines modularen Bartresens für die Küche</p>
+</header>
+
+<main>
+  <section aria-labelledby="overview">
+    <h2 id="overview">Projektübersicht</h2>
+    <p class="label">Status: Planung</p>
+    <p>Dieses Projekt dokumentiert die Planung, Konstruktion und den Bau eines Bartresens für die Küche. Hier finden Sie die Beschreibung, Stückliste, technischen Zeichnungen und eine interaktive 3D-Ansicht.</p>
+  </section>
+
+  <section aria-labelledby="docs">
+    <h2 id="docs">Dokumentation</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+      <article style="background:#fff;padding:1.5rem;border:1px solid #d0d8d8;border-radius:8px;">
+        <h3>Beschreibung</h3>
+        <p><a href="docs/DESCRIPTION.md" style="color:#2d3a3a;">→ DESCRIPTION.md lesen</a></p>
+      </article>
+      <article style="background:#fff;padding:1.5rem;border:1px solid #d0d8d8;border-radius:8px;">
+        <h3>Stückliste (BOM)</h3>
+        <p><a href="docs/BOM.md" style="color:#2d3a3a;">→ BOM.md lesen</a></p>
+      </article>
+      <article style="background:#fff;padding:1.5rem;border:1px solid #d0d8d8;border-radius:8px;">
+        <h3>Technische Zeichnungen</h3>
+        <p><a href="docs/DRAWINGS.md" style="color:#2d3a3a;">→ DRAWINGS.md lesen</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="drawings">
+    <h2 id="drawings">Vier Ansichten</h2>
+    <p class="label">MASSSTABLICH SCHEMATISCH</p>
+    <p>Die Ansichten verwenden dieselbe Bezugskante und denselben Aufbau. Zeichnungen werden ergänzt, sobald die Planung finalisiert ist.</p>
+    <div class="drawings-grid">
+      <article class="drawing"><header><h3>Frontansicht</h3><p>Blick von vorne auf den Bartresen</p></header><div class="placeholder">Frontansicht folgt</div></article>
+      <article class="drawing"><header><h3>Draufsicht</h3><p>Blick von oben mit Auszugsrichtung</p></header><div class="placeholder">Draufsicht folgt</div></article>
+      <article class="drawing"><header><h3>Seitenansicht</h3><p>Seitenansicht mit vertikalem Aufbau</p></header><div class="placeholder">Seitenansicht folgt</div></article>
+      <article class="drawing"><header><h3>Isometrie</h3><p>Isometrische 3D-Ansicht</p></header><div class="placeholder">Isometrie folgt</div></article>
+    </div>
+  </section>
+
+  <section aria-labelledby="model3d">
+    <h2 id="model3d">Der Aufbau im Raum</h2>
+    <p class="label">INTERAKTIVE 3D-ANSICHT</p>
+    <p>Mit der Maus oder per Touch drehen, verschieben und zoomen. Die 3D-Ansicht wird implementiert, sobald das Modell vorliegt.</p>
+    <div class="model-wrap">
+      <div id="model" aria-label="Interaktives 3D-Modell des Bartresens"></div>
+      <div class="model-controls" aria-label="3D Ansicht steuern">
+        <div class="view-buttons">
+          <button type="button" data-view="iso" aria-pressed="true">Isometrie</button>
+          <button type="button" data-view="front" aria-pressed="false">Front</button>
+          <button type="button" data-view="side" aria-pressed="false">Seite</button>
+          <button type="button" data-view="top" aria-pressed="false">Oben</button>
+        </div>
+        <label class="toggle-line"><input id="cargo-toggle" type="checkbox" checked>Inhalte zeigen</label>
+      </div>
+      <p class="model-note">3D-Modell wird nachgeladen, sobald verfügbar</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Planungsstand: Konzept. Vor Beschaffung sind Maße, Befestigung und Materialien zu prüfen.</p>
+</footer>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.164.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.164.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+  // Three.js Setup für interaktives 3D-Modell
+  // Wird implementiert, sobald das 3D-Modell vorliegt
+  console.log('Bartresen Küche - 3D-Modul bereit für Implementierung');
+</script>
+</body>
+</html>
