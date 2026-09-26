@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Isometrische Ansicht: durchgehende Arbeitsplatte ohne L-Bein, Schubladenblock links, offene Barzone mit Stützen rechts, Regalaufsatz auf der Platte">
+<!-- Hilfslinien Projektion: horizontale Achse = Länge, 30°-Achse = Tiefe, vertikale Achse = Höhe. K=0.5 -->
+<g stroke="#344244" stroke-width="1.5">
+<!-- Bodenfläche -->
+<polygon points="140,480 555,480 685,368 270,368" fill="#e8e4d5" stroke="none"/>
+<!-- Wand hinter Sektion 1 -->
+<polygon points="140,480 140,232 270,120 270,368" fill="#e0dbcb" stroke="none"/>
+<polygon points="140,232 555,232 685,120 270,120" fill="none" stroke="#b8b4a5" stroke-dasharray="3 3"/>
+</g>
+<!-- ============ ARBEITSPLATTE (eine durchgehende Platte, 40 dick) ============ -->
+<!-- Sektion 1: 1200 lang, 500 tief (x 140..560, tiefe 0..500 -> y 480 - 0.433*500 = 264, x-Shift 0.25*500=125) -->
+<g stroke="#71421f" stroke-width="1.2">
+<!-- Top-Fläche Sek.1 -->
+<polygon points="140,232 560,232 685,144 265,144" fill="#b5804a"/>
+<!-- Vorderkante Sek.1 -->
+<polygon points="140,232 560,232 560,218 140,218" fill="#a96f3e"/>
+<!-- Seitenfläche links Sek.1 -->
+<polygon points="140,232 265,144 265,130 140,218" fill="#8e5a2e"/>
+<!-- Top-Fläche Sek.2: Rücksprung 200 -> startet bei tiefe=-200 (y 480+0.433*200 = 567 -> 232-? ) -->
+<!-- Sek.2: x 560..730 (500mm), tiefe -200..500 (700 tief); Front bleibt bei tiefe=0, Rückkante bei -200 -->
+<polygon points="560,232 730,232 855,144 855,94 730,182 685,144" fill="#b5804a"/>
+<polygon points="560,232 730,232 730,218 560,218" fill="#a96f3e"/>
+<polygon points="730,232 855,144 855,94 855,80 730,168 730,182" fill="#8e5a2e" opacity="0"/>
+<!-- Seitenfläche rechts Sek.2 (sichtbar) -->
+<polygon points="730,232 855,94 855,80 730,218" fill="#8e5a2e"/>
+<!-- Verbindungsstück oben (Stufe) -->
+<polygon points="685,144 855,94 855,80 685,130" fill="#8e5a2e"/>
+</g>
+<!-- ============ SCHUBLADENKORPUS (unter Sek.1) ============ -->
+<g stroke="#5a4a2a" stroke-width="1">
+<!-- Vorderseite -->
+<polygon points="140,232 560,232 560,468 140,468" fill="#d9c8a4"/>
+<!-- Schubladenfronten -->
+<g fill="#c8b48a">
+<polygon points="146,238 307,238 307,268 146,268"/>
+<polygon points="313,238 554,238 554,268 313,268"/>
+<polygon points="146,272 307,272 307,322 146,322"/>
+<polygon points="313,272 554,272 554,322 313,322"/>
+<polygon points="146,326 307,326 307,466 146,466"/>
+<polygon points="313,326 554,326 554,466 313,466"/>
+</g>
+<g stroke="#5a4a2a" stroke-width="1">
+<line x1="200" y1="253" x2="253" y2="253"/>
+<line x1="390" y1="253" x2="477" y2="253"/>
+<line x1="200" y1="297" x2="253" y2="297"/>
+<line x1="390" y1="297" x2="477" y2="297"/>
+<line x1="200" y1="396" x2="253" y2="396"/>
+<line x1="390" y1="396" x2="477" y2="396"/>
+</g>
+<!-- Seitenfläche Korpus (links, hinten an Wand) -->
+<polygon points="140,232 265,144 265,380 140,468" fill="#c2af86"/>
+</g>
+<!-- ============ STÜTZEN (unter Sek.2): 3 schlanke Pfosten 50x50 ============ -->
+<g fill="#6b7d80" stroke="#344244" stroke-width="1">
+<!-- Pfosten 1 hinten (bei tiefe≈600, x≈600) -->
+<polygon points="600,232 610,232 625,223 615,223" fill="#5a6d70"/>
+<polygon points="600,232 600,468 610,468 610,232"/>
+<polygon points="610,232 625,223 625,460 610,468"/>
+<!-- Pfosten 2 vorn (x≈680) -->
+<polygon points="680,232 690,232 690,468 680,468"/>
+<!-- Pfosten 3 hinten rechts (x≈720, tiefe≈600) -->
+<polygon points="720,232 730,232 745,223 735,223" fill="#5a6d70"/>
+<polygon points="720,232 720,468 730,468 730,232"/>
+<polygon points="730,232 745,223 745,460 730,468"/>
+</g>
+<!-- ============ REGALAUFSATZ auf Sek.1 (180 tief, auf Stelzen auf Platte) ============ -->
+<g stroke="#71421f" stroke-width="1.2">
+<!-- Stelzen (kurze Füße) -->
+<line x1="160" y1="218" x2="160" y2="206"/>
+<line x1="540" y1="218" x2="540" y2="206"/>
+<line x1="172" y1="212" x2="172" y2="200"/>
+<line x1="552" y1="212" x2="552" y2="206"/>
+<!-- Unteres Brett +50 -> 175px über 218 = y 43 -->
+<polygon points="140,60 520,60 565,38 185,38" fill="#b5804a"/>
+<polygon points="140,60 520,60 520,52 140,52" fill="#a96f3e"/>
+<polygon points="140,60 185,38 185,30 140,52" fill="#8e5a2e"/>
+<!-- Oberes Brett +100 -> 350px über 218 = y -132 (clip: y 8) -->
+<polygon points="140,-115 520,-115 565,-137 185,-137" fill="#b5804a" transform="translate(0,130)"/>
+<polygon points="140,-115 520,-115 520,-123 140,-123" fill="#a96f3e" transform="translate(0,130)"/>
+<!-- Seitenpfeiler Regal -->
+<line x1="148" y1="52" x2="148" y2="7"/>
+<line x1="512" y1="52" x2="512" y2="7"/>
+</g>
+<!-- ============ HOCKER in Barzone ============ -->
+<g stroke="#5a696d" stroke-width="1.2" fill="#829296">
+<!-- Sitzfläche (760 Sitz -> 468-266=202) -->
+<polygon points="640,202 700,202 720,190 660,190" fill="#a96f3e" stroke="#71421f"/>
+<polygon points="640,202 700,202 700,208 640,208"/>
+<!-- Beine -->
+<line x1="646" y1="208" x2="640" y2="468"/>
+<line x1="694" y1="208" x2="700" y2="468"/>
+<line x1="712" y1="196" x2="718" y2="456"/>
+</g>
+<!-- ============ BESCHRIFTUNG ============ -->
+<g font-family="Arial,sans-serif" font-size="13" fill="#172126">
+<text x="350" y="500" text-anchor="middle">1200 mm Wandabschnitt (Schubladen 2 × 3)</text>
+<text x="700" y="500" text-anchor="middle">400–500 mm Bar</text>
+<text x="80" y="360" text-anchor="middle" transform="rotate(-90 80 360)">1060</text>
+<text x="350" y="334" text-anchor="middle" fill="#5a4a2a">Schubladen</text>
+<text x="660" y="290" text-anchor="middle" fill="#3d4b4c">offen</text>
+<text x="350" y="90" text-anchor="middle" fill="#3d4b4c">Regal auf Stelzen +50</text>
+<text x="350" y="-30" text-anchor="middle" fill="#3d4b4c" transform="translate(0,130)">+100</text>
+<text x="840" y="160" text-anchor="middle" fill="#b7472a" font-size="12">Rücksprung</text>
+<text x="840" y="176" text-anchor="middle" fill="#b7472a" font-size="12">+200 mm</text>
+</g>
+<!-- Wichtige Hinweis-Box -->
+<g>
+<rect x="20" y="540" width="600" height="60" fill="#fffdf8" stroke="#b7472a" stroke-width="1" rx="4"/>
+<text x="30" y="562" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#b7472a">KEIN L-Bein:</text>
+<text x="30" y="582" font-family="Arial,sans-serif" font-size="12" fill="#172126">Die Platte läuft durchgehend gerade. Nur die Rückkante springt bei 120 cm um 20 cm vor.</text>
+</g>
+</svg>

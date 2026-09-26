@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Frontelevation: Arbeitsplatte 106 cm, Schubladenblock unter Wandabschnitt, offener Bartresen mit Stützen und Hocker, Regalaufsatz mit Brettern">
+<defs>
+<marker id="a1" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M6 0 0 3 6 6z" fill="#3d4b4c"/></marker>
+<pattern id="wallhatch" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#e8e4d5"/><line x1="0" y1="0" x2="0" y2="6" stroke="#b8b4a5" stroke-width="1"/></pattern>
+</defs>
+<!-- Boden -->
+<line x1="20" y1="468" x2="880" y2="468" stroke="#3d4b4c" stroke-width="2"/>
+<g stroke="#9aa4a2" stroke-width="1"><line x1="30" y1="468" x2="20" y2="478"/><line x1="60" y1="468" x2="50" y2="478"/><line x1="90" y1="468" x2="80" y2="478"/><line x1="120" y1="468" x2="110" y2="478"/><line x1="150" y1="468" x2="140" y2="478"/><line x1="180" y1="468" x2="170" y2="478"/><line x1="210" y1="468" x2="200" y2="478"/><line x1="240" y1="468" x2="230" y2="478"/><line x1="270" y1="468" x2="260" y2="478"/><line x1="300" y1="468" x2="290" y2="478"/><line x1="330" y1="468" x2="320" y2="478"/><line x1="360" y1="468" x2="350" y2="478"/><line x1="390" y1="468" x2="380" y2="478"/><line x1="420" y1="468" x2="410" y2="478"/><line x1="450" y1="468" x2="440" y2="478"/><line x1="480" y1="468" x2="470" y2="478"/><line x1="510" y1="468" x2="500" y2="478"/><line x1="540" y1="468" x2="530" y2="478"/><line x1="570" y1="468" x2="560" y2="478"/><line x1="600" y1="468" x2="590" y2="478"/><line x1="630" y1="468" x2="620" y2="478"/><line x1="660" y1="468" x2="650" y2="478"/><line x1="690" y1="468" x2="680" y2="478"/><line x1="720" y1="468" x2="710" y2="478"/><line x1="750" y1="468" x2="740" y2="478"/><line x1="780" y1="468" x2="770" y2="478"/><line x1="810" y1="468" x2="800" y2="478"/><line x1="840" y1="468" x2="830" y2="478"/></g>
+<!-- Wand (hinter Sektion 1, bis x=520, d.h. 1200mm @ x=100..520) -->
+<rect x="100" y="118" width="420" height="350" fill="url(#wallhatch)" stroke="none"/>
+<line x1="100" y1="118" x2="520" y2="118" stroke="#b8b4a5" stroke-width="1"/>
+<!-- Schubladenkorpus (1200mm breit, von 100 bis 520, Höhe 1020mm -> 468-40-340=88 .. 468) -->
+<rect x="100" y="128" width="420" height="340" fill="#d9c8a4" stroke="#71421f" stroke-width="1.5"/>
+<!-- Mittelsteg -->
+<line x1="310" y1="128" x2="310" y2="468" stroke="#71421f" stroke-width="1"/>
+<!-- Schubladen (je 3 pro Modul) -->
+<g fill="#c8b48a" stroke="#71421f" stroke-width="1">
+<rect x="106" y="134" width="198" height="60"/>
+<rect x="106" y="200" width="198" height="110"/>
+<rect x="106" y="316" width="198" height="146"/>
+<rect x="316" y="134" width="198" height="60"/>
+<rect x="316" y="200" width="198" height="110"/>
+<rect x="316" y="316" width="198" height="146"/>
+</g>
+<g stroke="#71421f" stroke-width="1.5"><line x1="180" y1="164" x2="230" y2="164"/><line x1="180" y1="255" x2="230" y2="255"/><line x1="180" y1="389" x2="230" y2="389"/><line x1="390" y1="164" x2="440" y2="164"/><line x1="390" y1="255" x2="440" y2="255"/><line x1="390" y1="389" x2="440" y2="389"/></g>
+<!-- Stützen (Bar-Sektion, 700mm breit -> 520..765) -->
+<g fill="#6b7d80" stroke="#344244" stroke-width="1">
+<rect x="530" y="128" width="9" height="340"/>
+<rect x="630" y="128" width="9" height="340"/>
+<rect x="740" y="128" width="9" height="340"/>
+</g>
+<!-- Hocker (Sitz 406mm hoch -> 468-200=268) -->
+<g stroke="#5a696d" fill="#829296" stroke-width="1.2">
+<rect x="600" y="263" width="90" height="10"/>
+<line x1="608" y1="273" x2="600" y2="468"/>
+<line x1="682" y1="273" x2="690" y2="468"/>
+<line x1="612" y1="380" x2="678" y2="380"/>
+</g>
+<rect x="612" y="255" width="70" height="8" fill="#a96f3e" stroke="#71421f"/>
+<!-- Arbeitsplatte (40mm stark, 14px) -->
+<rect x="88" y="114" width="690" height="14" fill="#a96f3e" stroke="#71421f" stroke-width="1.5"/>
+<!-- Regalaufsatz: Sockel ("Stelzen") auf Platte, zwei Bretter -->
+<g stroke="#71421f" stroke-width="1.2">
+<line x1="140" y1="114" x2="140" y2="102"/>
+<line x1="480" y1="114" x2="480" y2="102"/>
+</g>
+<rect x="120" y="94" width="380" height="8" fill="#a96f3e" stroke="#71421f" stroke-width="1.2"/>
+<rect x="120" y="-6" width="380" height="8" fill="#a96f3e" stroke="#71421f" stroke-width="1.2"/>
+<line x1="128" y1="94" x2="128" y2="2" stroke="#71421f" stroke-width="1"/>
+<line x1="492" y1="94" x2="492" y2="2" stroke="#71421f" stroke-width="1"/>
+<!-- Massketten -->
+<g stroke="#3d4b4c" fill="none" stroke-width="1" marker-start="url(#a1)" marker-end="url(#a1)">
+<line x1="100" y1="500" x2="520" y2="500"/>
+<line x1="520" y1="530" x2="765" y2="530"/>
+<line x1="60" y1="114" x2="60" y2="468"/>
+<line x1="800" y1="114" x2="800" y2="263"/>
+<line x1="840" y1="94" x2="840" y2="114"/>
+<line x1="860" y1="-6" x2="860" y2="94"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="13" fill="#172126">
+<text x="310" y="520" text-anchor="middle">1200 mm (Wand)</text>
+<text x="642" y="550" text-anchor="middle">400–500 mm (Bar)</text>
+<text x="40" y="291" text-anchor="middle" transform="rotate(-90 40 291)">1060 mm</text>
+<text x="818" y="190" text-anchor="middle" transform="rotate(-90 818 190)">740 mm</text>
+<text x="805" y="104" text-anchor="end">+50 cm</text>
+<text x="878" y="46" text-anchor="end" transform="rotate(0)"></text>
+<text x="849" y="42" text-anchor="middle" transform="rotate(-90 849 42)">+100 cm</text>
+</g>
+<g font-family="Arial,sans-serif" font-size="12" fill="#5a696d">
+<text x="310" y="310" text-anchor="middle">Schubladen 2× 3</text>
+<text x="640" y="200" text-anchor="middle">offen</text>
+<text x="645" y="215" text-anchor="middle">(Hocker)</text>
+<text x="310" y="86" text-anchor="middle">Regalaufsatz auf Stelzen, 180 mm tief</text>
+</g>
+</svg>

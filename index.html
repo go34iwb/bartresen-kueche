@@ -1,117 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bartresen Küche</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="description" content="Bartresen Küche: 106 cm hohe, durchgehende Massivholz-Arbeitsplatte mit Schubladenblock, offenem Barbereich und aufsitzendem Regal.">
+<title>Bartresen Küche — Steh-Arbeitsplatte mit Barverlängerung</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; background: #faf9f6; color: #1a1a1a; }
-  header.banner { background: #2d3a3a; color: #e8e8e8; padding: 3rem 1.5rem; text-align: center; }
-  header.banner h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; margin-bottom: 0.5rem; }
-  header.banner p { opacity: 0.85; max-width: 700px; margin: 0 auto; }
-  main { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
-  section { margin-bottom: 3rem; }
-  h2 { font-size: 1.5rem; color: #2d3a3a; border-bottom: 2px solid #2d3a3a; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-  h3 { font-size: 1.1rem; color: #3a4a4a; margin-bottom: 0.5rem; }
-  .label { display: inline-block; background: #2d3a3a; color: #fff; font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 3px; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
-  .drawings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-  .drawing { background: #fff; border: 1px solid #d0d8d8; border-radius: 8px; overflow: hidden; }
-  .drawing header { background: #f5f7f7; padding: 1rem; border-bottom: 1px solid #d0d8d8; }
-  .drawing header p { font-size: 0.85rem; color: #5a6a6a; margin-top: 0.25rem; }
-  .drawing svg { display: block; width: 100%; height: auto; background: #faf9f6; }
-  .drawing img { display: block; width: 100%; height: auto; }
-  .model-wrap { background: #fff; border: 1px solid #d0d8d8; border-radius: 8px; overflow: hidden; }
-  #model { width: 100%; height: 500px; background: #e8ecec; }
-  .model-controls { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 1rem; background: #f5f7f7; border-top: 1px solid #d0d8d8; align-items: center; }
-  .model-controls button { background: #2d3a3a; color: #fff; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-size: 0.9rem; }
-  .model-controls button[aria-pressed="true"] { background: #1a2525; }
-  .model-controls button:hover { background: #1a2525; }
-  .model-controls label { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: #3a4a4a; cursor: pointer; }
-  .model-note { font-size: 0.85rem; color: #6a7a7a; margin-top: 0.5rem; text-align: center; }
-  footer { text-align: center; padding: 2rem; color: #6a7a7a; font-size: 0.85rem; border-top: 1px solid #d0d8d8; margin-top: 2rem; }
-  .placeholder { display: flex; align-items: center; justify-content: center; height: 300px; color: #9aa8a8; font-style: italic; background: repeating-linear-gradient(45deg, #f0f2f2, #f0f2f2 10px, #e8ecec 10px, #e8ecec 20px); }
+:root{--ink:#172126;--muted:#5a696d;--paper:#f3f1ea;--panel:#fffdf8;--line:#c8c5ba;--aluminum:#829296;--wood:#a96f3e;--accent:#b7472a;--swatch:#3c7881;}
+*{box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{margin:0;color:var(--ink);background:var(--paper);font-family:Georgia,"Times New Roman",serif;line-height:1.5;}
+button,input{font:inherit;} .shell{width:min(1180px,calc(100% - 32px));margin:0 auto;}
+.masthead{border-bottom:1px solid var(--line);background:var(--panel);} .masthead .shell{padding:42px 0 28px;}
+.eyebrow,.drawing-kicker,.model-meta{margin:0 0 8px;color:var(--accent);font:700 .76rem/1.2 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;}
+h1,h2,h3{line-height:1.1;font-weight:400;} h1{max-width:760px;margin:0;font-size:clamp(2.25rem,6vw,4.6rem);} h2{margin:0;font-size:clamp(1.65rem,3vw,2.45rem);} h3{margin:0;font-size:1.25rem;}
+.intro{display:grid;grid-template-columns:minmax(0,2fr) minmax(220px,1fr);gap:28px;padding:28px 0;border-bottom:1px solid var(--line);} .intro p{margin:0;font-size:1.12rem;}
+.facts{margin:0;padding:0;list-style:none;font-family:Arial,sans-serif;} .facts li{padding:7px 0;border-top:1px solid var(--line);} .facts strong{display:inline-block;min-width:120px;}
+main{padding:48px 0 0;} .section-heading{margin-bottom:20px;} .section-heading p{max-width:720px;margin:10px 0 0;color:var(--muted);}
+.note{padding:14px 16px;margin:0 0 18px;background:#fffdf8;border-left:4px solid var(--accent);font-family:Arial,sans-serif;font-size:.92rem;}
+.drawings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;} .drawing{min-width:0;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:6px;}
+.drawing header{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:12px;} .drawing header p{margin:0;color:var(--muted);font:.78rem Arial,sans-serif;}
+.drawing img{display:block;width:100%;height:auto;background:#f8f6ef;border:1px solid #ddd8cb;}
+.model-section{margin-top:48px;padding:36px 0 0;border-top:1px solid var(--line);} .model-header{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:16px;} .model-header p{max-width:600px;margin:8px 0 0;color:var(--muted);}
+.model-wrap{position:relative;height:640px;overflow:hidden;background:#dfe4df;border:1px solid #aeb9b6;border-radius:6px;} #model{width:100%;height:100%;} #model canvas{display:block;width:100%;height:100%;}
+.model-controls{position:absolute;top:16px;left:16px;display:grid;gap:8px;padding:11px;color:var(--ink);background:rgba(255,253,248,.9);border:1px solid rgba(95,110,108,.55);border-radius:4px;font:.82rem Arial,sans-serif;}
+.view-buttons{display:flex;flex-wrap:wrap;gap:5px;} .view-buttons button,.toggle-line{min-height:34px;border:1px solid #687a7b;border-radius:3px;color:#172126;background:#fffdf8;cursor:pointer;} .view-buttons button{padding:6px 8px;} .view-buttons button[aria-pressed="true"]{color:#fff;background:#274e55;}
+.toggle-line{display:flex;align-items:center;gap:7px;padding:0 8px;} .toggle-line input{width:15px;height:15px;accent-color:#274e55;} .model-note{position:absolute;right:16px;bottom:12px;margin:0;color:#354245;font:.75rem Arial,sans-serif;}
+.legend{display:flex;flex-wrap:wrap;gap:18px;margin:14px 0 48px;font:.82rem Arial,sans-serif;} .legend span{display:inline-flex;align-items:center;gap:6px;} .swatch{width:14px;height:14px;border:1px solid rgba(0,0,0,.25);}
+table.bom{width:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:.9rem;background:var(--panel);}
+table.bom th,table.bom td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);}
+table.bom th{font-weight:700;background:#efe9d8;letter-spacing:.02em;}
+table.bom tr.group td{background:#f2ecda;font-weight:700;text-transform:uppercase;font-size:.78rem;letter-spacing:.06em;color:var(--accent);}
+.footer{padding:22px 0;background:#172126;color:#e8e6df;font:.78rem Arial,sans-serif;margin-top:60px;} .footer p{margin:0;}
+@media (max-width:760px){.masthead .shell{padding-top:30px;} .intro,.drawings{grid-template-columns:1fr;} .model-header{display:block;} .model-wrap{height:510px;} .model-controls{right:12px;left:12px;} .model-note{display:none;}}
 </style>
 </head>
 <body>
-<header class="banner">
-  <h1>Bartresen Küche</h1>
-  <p>Planung & Dokumentation eines modularen Bartresens für die Küche</p>
-</header>
+<header class="masthead"><div class="shell">
+<p class="eyebrow">Küche / Bartresen</p>
+<h1>Steh-Arbeitsplatte mit Barverlängerung</h1>
+</div></header>
 
-<main>
-  <section aria-labelledby="overview">
-    <h2 id="overview">Projektübersicht</h2>
-    <p class="label">Status: Planung</p>
-    <p>Dieses Projekt dokumentiert die Planung, Konstruktion und den Bau eines Bartresens für die Küche. Hier finden Sie die Beschreibung, Stückliste, technischen Zeichnungen und eine interaktive 3D-Ansicht.</p>
-  </section>
+<div class="shell intro">
+  <p>Eine durchgehende Massivholz-Arbeitsplatte in gerader Linie (160–170 cm). Links über 120 cm liegt sie an der Wand — darunter ein geschlossener Schubladenblock. Die Wand endet, die Platte läuft in derselben Richtung weiter und wird dabei 20 cm tiefer (Rücksprung an der Rückkante; die Vorderkante bleibt durchgehend). So entsteht eine offene Barzone mit Hocker. Ein schmaler Regalaufsatz steht auf Stelzen auf der Platte.</p>
+  <ul class="facts" aria-label="Kernmasse">
+    <li><strong>Länge</strong>160–170 cm</li>
+    <li><strong>Sekt. 1</strong>120 × 50 cm</li>
+    <li><strong>Sekt. 2</strong>40–50 × 70 cm</li>
+    <li><strong>Höhe</strong>106 cm</li>
+    <li><strong>Plattenstärke</strong>40 mm</li>
+    <li><strong>Hocker-Sitz</strong>74–76 cm</li>
+  </ul>
+</div>
 
-  <section aria-labelledby="docs">
-    <h2 id="docs">Dokumentation</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-      <article style="background:#fff;padding:1.5rem;border:1px solid #d0d8d8;border-radius:8px;">
-        <h3>Beschreibung</h3>
-        <p><a href="docs/DESCRIPTION.md" style="color:#2d3a3a;">→ DESCRIPTION.md lesen</a></p>
-      </article>
-      <article style="background:#fff;padding:1.5rem;border:1px solid #d0d8d8;border-radius:8px;">
-        <h3>Stückliste (BOM)</h3>
-        <p><a href="docs/BOM.md" style="color:#2d3a3a;">→ BOM.md lesen</a></p>
-      </article>
-      <article style="background:#fff;padding:1.5rem;border:1px solid #d0d8d8;border-radius:8px;">
-        <h3>Technische Zeichnungen</h3>
-        <p><a href="docs/DRAWINGS.md" style="color:#2d3a3a;">→ DRAWINGS.md lesen</a></p>
-      </article>
+<main class="shell">
+
+<p class="note"><strong>Kritisch:</strong> Kein L-Bein. Die Platte läuft in <em>einer</em> Linie. Nur die <em>Rückkante</em> springt bei 120 cm um 20 cm vor. Höhe 106 cm in <em>beiden</em> Sektionen — eine durchgehende Ebene.</p>
+
+<section aria-labelledby="drawings-title">
+  <div class="section-heading">
+    <p class="drawing-kicker">Massstablich schematisch</p>
+    <h2 id="drawings-title">Vier Ansichten</h2>
+    <p>Front: zwei 60-cm-Schubladenmodule, offene Barzone mit drei schlanken Stützen, Hocker. Draufsicht: Wand endet bei 120 cm, Rücksprung +20 cm, durchgehende Vorderkante. Seite: Tiefensprung 50→70 cm, Regalbrett 18 cm tief auf Stelzen. Isometrie: eine Platte, eine Höhe — kein L.</p>
+  </div>
+  <div class="drawings">
+    <article class="drawing"><header><h3>Frontansicht</h3><p>1060 mm Arbeitshöhe; Regalbretter +50/+100</p></header>
+      <img src="assets/front.svg" alt="Frontansicht"></article>
+    <article class="drawing"><header><h3>Draufsicht</h3><p>Vorderkante gerade, Rücksprung bei 1200</p></header>
+      <img src="assets/top.svg" alt="Draufsicht"></article>
+    <article class="drawing"><header><h3>Seitenansicht</h3><p>Tiefenwechsel 500 → 700 mm</p></header>
+      <img src="assets/side.svg" alt="Seitenansicht"></article>
+    <article class="drawing"><header><h3>Isometrie</h3><p>Eine Platte, eine Ebene — kein L</p></header>
+      <img src="assets/isometric.svg" alt="Isometrische Ansicht"></article>
+  </div>
+</section>
+
+<section class="model-section" aria-labelledby="model-title">
+  <div class="model-header">
+    <div>
+      <p class="model-meta">Interaktive 3D-Ansicht</p>
+      <h2 id="model-title">Der Aufbau im Raum</h2>
+      <p>Mit der Maus oder per Touch drehen, zoomen, schwenken. „Platte ausblenden" macht die Unterkonstruktion (Schubladen, Stützen) sichtbar.</p>
     </div>
-  </section>
-
-  <section aria-labelledby="drawings">
-    <h2 id="drawings">Vier Ansichten</h2>
-    <p class="label">MASSSTABLICH SCHEMATISCH</p>
-    <p>Die Ansichten verwenden dieselbe Bezugskante und denselben Aufbau. Zeichnungen werden ergänzt, sobald die Planung finalisiert ist.</p>
-    <div class="drawings-grid">
-      <article class="drawing"><header><h3>Frontansicht</h3><p>Blick von vorne auf den Bartresen</p></header><div class="placeholder">Frontansicht folgt</div></article>
-      <article class="drawing"><header><h3>Draufsicht</h3><p>Blick von oben mit Auszugsrichtung</p></header><div class="placeholder">Draufsicht folgt</div></article>
-      <article class="drawing"><header><h3>Seitenansicht</h3><p>Seitenansicht mit vertikalem Aufbau</p></header><div class="placeholder">Seitenansicht folgt</div></article>
-      <article class="drawing"><header><h3>Isometrie</h3><p>Isometrische 3D-Ansicht</p></header><div class="placeholder">Isometrie folgt</div></article>
-    </div>
-  </section>
-
-  <section aria-labelledby="model3d">
-    <h2 id="model3d">Der Aufbau im Raum</h2>
-    <p class="label">INTERAKTIVE 3D-ANSICHT</p>
-    <p>Mit der Maus oder per Touch drehen, verschieben und zoomen. Die 3D-Ansicht wird implementiert, sobald das Modell vorliegt.</p>
-    <div class="model-wrap">
-      <div id="model" aria-label="Interaktives 3D-Modell des Bartresens"></div>
-      <div class="model-controls" aria-label="3D Ansicht steuern">
-        <div class="view-buttons">
-          <button type="button" data-view="iso" aria-pressed="true">Isometrie</button>
-          <button type="button" data-view="front" aria-pressed="false">Front</button>
-          <button type="button" data-view="side" aria-pressed="false">Seite</button>
-          <button type="button" data-view="top" aria-pressed="false">Oben</button>
-        </div>
-        <label class="toggle-line"><input id="cargo-toggle" type="checkbox" checked>Inhalte zeigen</label>
+  </div>
+  <div class="model-wrap">
+    <div id="model" aria-label="Interaktives 3D-Modell des Bartresens"></div>
+    <div class="model-controls" aria-label="3D Ansicht steuern">
+      <div class="view-buttons">
+        <button type="button" data-view="iso" aria-pressed="true">Isometrie</button>
+        <button type="button" data-view="front" aria-pressed="false">Front</button>
+        <button type="button" data-view="side" aria-pressed="false">Seite</button>
+        <button type="button" data-view="top" aria-pressed="false">Oben</button>
       </div>
-      <p class="model-note">3D-Modell wird nachgeladen, sobald verfügbar</p>
+      <label class="toggle-line"><input id="top-toggle" type="checkbox" checked>Platte zeigen</label>
+      <label class="toggle-line"><input id="shelf-toggle" type="checkbox" checked>Regal zeigen</label>
     </div>
-  </section>
+    <p class="model-note">Front = Raumseite / Vorderkante durchgehend</p>
+  </div>
+  <div class="legend" aria-label="Legende">
+    <span><i class="swatch" style="background:#a96f3e"></i>Massivholz (Eiche)</span>
+    <span><i class="swatch" style="background:#d9c8a4"></i>Schubladenkorpus</span>
+    <span><i class="swatch" style="background:#829296"></i>Stützen</span>
+    <span><i class="swatch" style="background:#3c7881"></i>Hocker</span>
+  </div>
+</section>
+
+<section aria-labelledby="bom-title" style="margin-top:48px;">
+  <div class="section-heading">
+    <p class="drawing-kicker">Einkaufsliste</p>
+    <h2 id="bom-title">Stückliste (BOM)</h2>
+    <p>Zuschnittmaße in mm. Holz = Eiche massiv durchgehend (Empfehlung). Beschläge nach Qualitätswunsch austauschbar.</p>
+  </div>
+  <table class="bom">
+    <thead><tr><th>#</th><th>Bauteil</th><th>Maß (L×B×H) mm</th><th>Anz.</th><th>Material / Bezug</th></tr></thead>
+    <tbody>
+      <tr class="group"><td colspan="5">Arbeitsplatte</td></tr>
+      <tr><td>1</td><td>Arbeitsplatte links</td><td>1200 × 500 × 40</td><td>1</td><td>Eiche-Leimholz 40 mm</td></tr>
+      <tr><td>2</td><td>Arbeitsplatte rechts</td><td>500 × 700 × 40</td><td>1</td><td>Eiche-Leimholz 40 mm</td></tr>
+      <tr class="group"><td colspan="5">Schubladenblock (unter Sektion 1)</td></tr>
+      <tr><td>3</td><td>Korpus-Seiten</td><td>1020 × 500 × 19</td><td>4</td><td>Eiche-Multiplex 19 mm</td></tr>
+      <tr><td>4</td><td>Korpus-Böden</td><td>561 × 480 × 19</td><td>4</td><td>Eiche-Multiplex 19 mm</td></tr>
+      <tr><td>5</td><td>Mittelwand</td><td>1020 × 500 × 19</td><td>1</td><td>Eiche-Multiplex 19 mm</td></tr>
+      <tr><td>6</td><td>Rückwand</td><td>1162 × 1020 × 8</td><td>1</td><td>Sperrholz 8 mm</td></tr>
+      <tr><td>7</td><td>Schubladenfronten</td><td>596 × var. × 19</td><td>6</td><td>Eiche massiv 19 mm</td></tr>
+      <tr><td>8</td><td>Schubladenzargen</td><td>n. Beschlag</td><td>6 Sets</td><td>fertige Schubkastensysteme</td></tr>
+      <tr class="group"><td colspan="5">Beschläge</td></tr>
+      <tr><td>9</td><td>Vollauszüge, Soft-Close</td><td>500 mm, 45 kg</td><td>6 Paar</td><td>z. B. Blum Tandem / Hettich</td></tr>
+      <tr><td>10</td><td>Möbelgriffe</td><td>160 mm BA</td><td>6</td><td>Edelstahl / schwarz matt</td></tr>
+      <tr class="group"><td colspan="5">Barzone (Stützen + Hocker)</td></tr>
+      <tr><td>11</td><td>Stützen / Barfüße</td><td>50 × 50 × 1020</td><td>3</td><td>Eiche massiv o. Stahlrohr</td></tr>
+      <tr><td>12</td><td>Barhocker, Sitz 750 mm</td><td>Standard</td><td>1–2</td><td>Freiwahl</td></tr>
+      <tr class="group"><td colspan="5">Regalaufsatz (auf Platte, Sektion 1)</td></tr>
+      <tr><td>13</td><td>Regalbretter</td><td>1200 × 180 × 20</td><td>2</td><td>Eiche massiv</td></tr>
+      <tr><td>14</td><td>Seitenstützen Regal</td><td>880 × 20 × 20</td><td>4</td><td>Eiche massiv</td></tr>
+      <tr><td>15</td><td>Stelzen (Riser)</td><td>40 × 20 × 20</td><td>4</td><td>Eiche massiv</td></tr>
+      <tr class="group"><td colspan="5">Elektro & Zubehör</td></tr>
+      <tr><td>16</td><td>Schuko-Doppelsteckdose</td><td>Unterputz/Unterbau</td><td>1</td><td>mit USB-C (optional)</td></tr>
+      <tr><td>17</td><td>Hartöl, lebensmittelecht</td><td>1 L</td><td>1</td><td>z. B. Osmo TopOil</td></tr>
+      <tr><td>18</td><td>Schneidebrett (loose)</td><td>450 × 400 × 40</td><td>1</td><td>Eiche massiv</td></tr>
+    </tbody>
+  </table>
+</section>
+
 </main>
 
-<footer>
-  <p>Planungsstand: Konzept. Vor Beschaffung sind Maße, Befestigung und Materialien zu prüfen.</p>
-</footer>
+<footer class="footer"><div class="shell">
+<p>Planungsstand: Konzept. Vor Fertigung: Wandabstände, Steckdosenlage, Kühlluftzirkulation hinter Hockerstellung prüfen. Materialstärken Schubladenfronten ggf. an Beschlagsystem anpassen.</p>
+</div></footer>
 
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://unpkg.com/three@0.164.0/build/three.module.js",
-    "three/addons/": "https://unpkg.com/three@0.164.0/examples/jsm/"
-  }
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+const host = document.getElementById('model');
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0xdfe4df);
+const camera = new THREE.PerspectiveCamera(42, 1, 1, 5000);
+const renderer = new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.outputEncoding = THREE.sRGBEncoding;
+host.appendChild(renderer.domElement);
+
+const controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = .08;
+controls.target.set(700, 560, 250);
+controls.maxPolarAngle = Math.PI/2 - .02;
+controls.minDistance = 800;
+controls.maxDistance = 4000;
+
+scene.add(new THREE.HemisphereLight(0xffffff, 0x697b76, 2.2));
+const key = new THREE.DirectionalLight(0xfff4d6, 2.5);
+key.position.set(-800, 1600, 1000);
+key.castShadow = true;
+key.shadow.mapSize.set(2048, 2048);
+key.shadow.camera.left=-1500; key.shadow.camera.right=1500;
+key.shadow.camera.top=1500; key.shadow.camera.bottom=-1500;
+scene.add(key);
+
+const floor = new THREE.Mesh(new THREE.PlaneGeometry(4000, 3000), new THREE.MeshStandardMaterial({color:0xc9d1cb, roughness:1}));
+floor.rotation.x = -Math.PI/2;
+floor.receiveShadow = true;
+scene.add(floor);
+
+const wall = new THREE.Mesh(new THREE.BoxGeometry(1200, 2400, 30), new THREE.MeshStandardMaterial({color:0xe0dbcb, roughness:1}));
+wall.position.set(600, 1200, -15);
+wall.receiveShadow = true;
+scene.add(wall);
+
+const M = {
+  wood: new THREE.MeshStandardMaterial({color:0xa96f3e, roughness:.6}),
+  woodLight: new THREE.MeshStandardMaterial({color:0xc9b28a, roughness:.7}),
+  woodDark: new THREE.MeshStandardMaterial({color:0x8e5a2e, roughness:.7}),
+  corpus: new THREE.MeshStandardMaterial({color:0xd9c8a4, roughness:.7}),
+  metal: new THREE.MeshStandardMaterial({color:0x829296, metalness:.6, roughness:.4}),
+  stool: new THREE.MeshStandardMaterial({color:0x3c7881, roughness:.55})
+};
+
+const topGroup = new THREE.Group();
+const shelfGroup = new THREE.Group();
+scene.add(topGroup, shelfGroup);
+
+function box(w,h,d, x,y,z, mat, parent=scene) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(w,h,d), mat);
+  m.position.set(x, y+h/2, z);
+  m.castShadow = true;
+  m.receiveShadow = true;
+  parent.add(m);
+  return m;
 }
-</script>
-<script type="module">
-  // Three.js Setup für interaktives 3D-Modell
-  // Wird implementiert, sobald das 3D-Modell vorliegt
-  console.log('Bartresen Küche - 3D-Modul bereit für Implementierung');
+
+// Arbeitsplatte (Stärke 40, Oberkante 1060)
+box(1200, 40, 500, 600, 1020, 250, M.wood, topGroup);   // Sektion 1: 1200x500
+box(500, 40, 700, 1450, 1020, 150, M.wood, topGroup);    // Sektion 2: 500x700, Rücksprung z -200..500
+
+// Schubladenblock (unter Sektion 1)
+[10, 600, 1190].forEach(x => box(19, 1020, 500, x, 0, 250, M.corpus));
+box(561, 19, 500, 300, 0, 250, M.corpus);
+box(561, 19, 500, 900, 0, 250, M.corpus);
+box(1162, 1020, 8, 600, 0, 4, M.corpus);
+const drawerH = [140, 240, 380];
+[300, 900].forEach(cx => {
+  let y = 19;
+  drawerH.forEach(h => {
+    box(561, h, 19, cx, y, 250+250-19, M.woodLight);
+    y += h + 4;
+  });
+});
+
+// Stützen Barzone
+[1250, 1450, 1650].forEach(x => box(50, 1020, 50, x, 0, 200, M.metal));
+
+// Hocker Sitz 750
+box(360, 30, 360, 1450, 720, 250, M.stool);
+[[1300,120],[1600,120],[1300,380],[1600,380]].forEach(([lx,lz]) => box(30, 720, 30, lx, 0, lz, M.metal));
+
+// Regalaufsatz (auf Platte, Sektion 1, 180 tief)
+[100, 1100].forEach(x => {
+  box(20, 40, 20, x, 1060, 90, M.woodDark, shelfGroup);
+  box(20, 40, 20, x, 1060, 250, M.woodDark, shelfGroup);
+  box(20, 880, 20, x, 1100, 90, M.woodDark, shelfGroup);
+  box(20, 880, 20, x, 1100, 250, M.woodDark, shelfGroup);
+});
+box(1200, 20, 180, 600, 1060+500, 170, M.wood, shelfGroup);
+box(1200, 20, 180, 600, 1060+1000, 170, M.wood, shelfGroup);
+
+// Rot-Marker an der Kante wo die Wand endet
+const marker = new THREE.Mesh(new THREE.BoxGeometry(8, 1200, 700),
+  new THREE.MeshBasicMaterial({color:0xb7472a, transparent:true, opacity:.18}));
+marker.position.set(1200, 600, 150);
+scene.add(marker);
+
+function resize(){
+  const {width, height} = host.getBoundingClientRect();
+  camera.aspect = width/height;
+  camera.fov = width < height ? 70 : 42;
+  camera.updateProjectionMatrix();
+  renderer.setSize(width, height, false);
+}
+new ResizeObserver(resize).observe(host);
+resize();
+
+const views = {
+  iso:   new THREE.Vector3(2200, 1600, 2200),
+  front: new THREE.Vector3(700, 1100, -2500),
+  side:  new THREE.Vector3(2900, 1100, 250),
+  top:   new THREE.Vector3(700, 3200, 250)
+};
+function setView(name){
+  camera.position.copy(views[name]);
+  controls.target.set(700, 560, 250);
+  controls.update();
+  document.querySelectorAll('[data-view]').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.view === name)));
+}
+document.querySelectorAll('[data-view]').forEach(b =>
+  b.addEventListener('click', () => setView(b.dataset.view)));
+
+document.getElementById('top-toggle').addEventListener('change', e => { topGroup.visible = e.target.checked; });
+document.getElementById('shelf-toggle').addEventListener('change', e => { shelfGroup.visible = e.target.checked; });
+
+setView('iso');
+(function render(){ requestAnimationFrame(render); controls.update(); renderer.render(scene, camera); })();
 </script>
 </body>
 </html>
